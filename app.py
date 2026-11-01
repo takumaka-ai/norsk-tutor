@@ -48,7 +48,7 @@ if user_input := st.chat_input("Skriv noe på norsk... (e.g., 'Jeg i dag spiste 
         with st.spinner("Compiling..."):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-flash-latest",
                     contents=contents,
                     config=types.GenerateContentConfig(
                         system_instruction=SYSTEM_PROMPT,
