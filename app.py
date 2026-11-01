@@ -5,8 +5,9 @@ from google.genai import types
 
 # 1. Page Configuration
 st.set_page_config(page_title="Norsk Syntax Compiler", page_icon="🇳🇴", layout="centered")
-st.title("🇳🇴 Norsk Syntax Compiler")
-st.markdown("Enter a Norwegian sentence. The compiler will check for syntax errors and explain grammar using computer science concepts.")
+st.title("🇳🇴 Norsk syntaks og grammatisk analyse")
+st.markdown("Skriv inn en setning på norsk. Systemet foretar en formell analyse av setningsstruktur, "
+    "morfologi og leddstilling, og gir en akademisk tilbakemelding med utgangspunkt i norsk grammatikk.")
 
 # 2. Initialize the API Client
 try:
